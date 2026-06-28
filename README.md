@@ -1,8 +1,10 @@
 Maison Du Sucre
 
+
 Description:
 
 A modern bakery website built to highlight products, strengthen brand presence and provide customers with an engaging experience across desktop and mobile devices.
+
 
 Tech Stack:
 
@@ -17,6 +19,7 @@ Bootstrap
 Figma
 
 Visual Studio Code
+
 
 Features:
 
@@ -33,6 +36,7 @@ Light and dark mode with saved user preferences.
 Smooth scrolling navigation and animated page interactions.
 
 Mobile-friendly navigation with a responsive menu drawer.
+
 
 Live Demo:
 
