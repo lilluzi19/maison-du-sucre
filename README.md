@@ -6,12 +6,12 @@ A modern bakery website built to highlight products, strengthen brand presence a
 
 Tech Stack:
 
-HTML
-CSS
-JavaScript
-Bootstrap
-Figma
-Visual Studio Code
+HTML.
+CSS.
+JavaScript.
+Bootstrap.
+Figma.
+Visual Studio Code.
 
 Features:
 
