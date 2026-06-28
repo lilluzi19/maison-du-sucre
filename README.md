@@ -7,6 +7,7 @@ A modern bakery website built to highlight products, strengthen brand presence a
 Tech Stack:
 
 HTML
+
 CSS
 JavaScript
 Bootstrap
