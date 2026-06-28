@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", savedTheme || systemTheme);
+  })();
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Menu | Swiss Pastries, Desserts & Cakes | Maison Du Sucre</title>
+  <meta name="description" content="Explore our menu of handcrafted Swiss pastries, artisan cakes, desserts and bakery favourites made fresh daily at Maison Du Sucre.">
+  <link href="assets/img/miscellaneous/logo.webp" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://maisondusucre.shop/menu.html" rel="canonical">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="menu-page preloader-active">
+
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+
+      <div class="preloader-mountain">
+        <span></span>
+
+        <svg viewBox="0 0 140 60" aria-hidden="true">
+          <path d="M18 50 L52 16 L86 50" />
+          <path d="M52 50 L88 8 L126 50" />
+        </svg>
+
+        <span></span>
+      </div>
+
+      <svg class="preloader-logo" viewBox="0 0 900 260">
+        <text x="50%" y="45%" text-anchor="middle" class="preloader-text">
+          Maison
+        </text>
+
+        <text x="50%" y="78%" text-anchor="middle" class="preloader-text preloader-text-small">
+          du Sucre
+        </text>
+      </svg>
+
+      <div class="preloader-label">
+        <span></span>
+        <p>SWISS BAKERY</p>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="topbar-contact d-flex align-items-center">
+          <a>
+            <i class="bi bi-envelope"></i>
+            maisondusucre@hotmail.com
+          </a>
+
+          <a>
+            <i class="bi bi-phone"></i>
+            +41 22 555 2910
+          </a>
+        </div>
+
+        <div class="topbar-socials d-flex align-items-center">
+          <a href=""><i class="bi bi-tiktok"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container header-inner">
+
+        <button class="mobile-burger" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="index.html" class="logo" id="logo">
+          <img src="assets/img/miscellaneous/logo.webp" alt="Maison du Sucre Logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#booking">Booking</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-switch" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="switch-bg">
+            <span class="sun"></span>
+            <span class="moon"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="mobile-nav-drawer">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <div class="mobile-nav-title">
+      Navigation
+    </div>
+
+    <div class="mobile-nav-divider"></div>
+
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#booking">Booking</a></li>
+    </ul>
+
+    <div class="mobile-nav-contact">
+      <span><i class="bi bi-envelope"></i> maisondusucre@hotmail.com</span>
+      <span><i class="bi bi-phone"></i> +41 22 555 2910</span>
+
+      <div class="mobile-nav-socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section id="menu" class="menu section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+            <span class="section-kicker">Our Menu</span>
+            <p>Explore Our Swiss Desserts, Pastries, Cakes & Drinks</p>
+            </div>
+
+            <div class="menu-filters">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="cakes">Cakes</button>
+            <button type="button" data-filter="pastries">Pastries</button>
+            <button type="button" data-filter="desserts">Desserts</button>
+            <button type="button" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="row g-4 menu-grid">
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="cakes">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/zuger_kirschtorte.webp" alt="Zuger Kirschtorte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Signature Classic</span>
+                    <div class="menu-title"><h3>Zuger Kirschtorte</h3><span>CHF 8.90</span></div>
+                    <p>A delicate Swiss layer cake with almond meringue, buttercream and a light cherry kirsch finish.</p>
+                    <div class="menu-tags"><span>Kirsch Cream</span><span>Almond Meringue</span><span>Swiss Favourite</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="cakes">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/swiss_chocolate_truffle_tart.webp" alt="Swiss Chocolate Truffle Tart"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Chocolate Indulgence</span>
+                    <div class="menu-title"><h3>Swiss Chocolate Truffle Tart</h3><span>CHF 8.20</span></div>
+                    <p>Smooth Swiss chocolate ganache in a crisp tart shell, finished with cocoa dusting.</p>
+                    <div class="menu-tags"><span>Dark Chocolate</span><span>Ganache</span><span>Cocoa Finish</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="cakes">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/engadiner_torte.webp" alt="Engadiner Torte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Caramel Classic</span>
+                    <div class="menu-title"><h3>Engadiner Torte</h3><span>CHF 7.20</span></div>
+                    <p>A buttery Swiss tart filled with caramelised walnuts and a rich alpine-style filling.</p>
+                    <div class="menu-tags"><span>Walnut</span><span>Caramel</span><span>Buttery Tart</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="cakes">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/aargauer_rüeblitorte.webp" alt="Aargauer Rüeblitorte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Swiss Carrot Cake</span>
+                    <div class="menu-title"><h3>Aargauer Rüeblitorte</h3><span>CHF 6.90</span></div>
+                    <p>A moist Swiss carrot cake with ground almonds, gentle spice and a soft sugar glaze.</p>
+                    <div class="menu-tags"><span>Carrot</span><span>Almond</span><span>Soft Glaze</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="cakes">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/swiss_apple_cake.webp" alt="Swiss Apple Cake"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Bakery Favourite</span>
+                    <div class="menu-title"><h3>Swiss Apple Cake</h3><span>CHF 6.40</span></div>
+                    <p>Soft vanilla sponge layered with tender apples, cinnamon warmth and a light golden crumb.</p>
+                    <div class="menu-tags"><span>Apple</span><span>Cinnamon</span><span>Vanilla Sponge</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pastries">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/bündner_nusstorte.webp" alt="Bündner Nusstorte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Alpine Favourite</span>
+                    <div class="menu-title"><h3>Bündner Nusstorte</h3><span>CHF 6.80</span></div>
+                    <p>A rich caramel walnut tart from Graubünden, wrapped in buttery shortcrust pastry.</p>
+                    <div class="menu-tags"><span>Caramel Walnut</span><span>Buttery Pastry</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pastries">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/basler_läckerli.webp" alt="Basler Läckerli"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Swiss Biscuit</span>
+                    <div class="menu-title"><h3>Basler Läckerli</h3><span>CHF 4.90</span></div>
+                    <p>A spiced Swiss biscuit with honey, almonds, candied peel and a light sugar glaze.</p>
+                    <div class="menu-tags"><span>Honey Spice</span><span>Almond</span><span>Basel Classic</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pastries">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/nidelkuchen.webp" alt="Nidelkuchen"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Cream Pastry</span>
+                    <div class="menu-title"><h3>Nidelkuchen</h3><span>CHF 5.80</span></div>
+                    <p>A soft cream tart with a tender base, caramelised top and beautifully rich dairy flavour.</p>
+                    <div class="menu-tags"><span>Cream</span><span>Caramelised</span><span>Soft Pastry</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pastries">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/swiss_apple_strudel.webp" alt="Swiss Apple Strudel"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Warm Pastry</span>
+                    <div class="menu-title"><h3>Swiss Apple Strudel</h3><span>CHF 6.20</span></div>
+                    <p>Thin flaky pastry filled with apples, raisins and cinnamon, served warm with cream.</p>
+                    <div class="menu-tags"><span>Apple</span><span>Cinnamon</span><span>Flaky Pastry</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="pastries">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/butter_gipfeli.webp" alt="Butter Gipfeli"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Morning Favourite</span>
+                    <div class="menu-title"><h3>Butter Gipfeli</h3><span>CHF 3.90</span></div>
+                    <p>A Swiss-style buttery crescent pastry, baked golden and perfect with fresh coffee.</p>
+                    <div class="menu-tags"><span>Buttery</span><span>Golden</span><span>Breakfast</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/meringue_and_double_cream.webp" alt="Meringue and Double Cream"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Mountain Classic</span>
+                    <div class="menu-title"><h3>Meringue & Double Cream</h3><span>CHF 7.40</span></div>
+                    <p>Crisp Swiss meringue served with silky double cream and seasonal berries.</p>
+                    <div class="menu-tags"><span>Light & Crisp</span><span>Double Cream</span><span>Berries</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/vermicelles.webp" alt="Vermicelles"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Autumn Dessert</span>
+                    <div class="menu-title"><h3>Vermicelles</h3><span>CHF 7.80</span></div>
+                    <p>Sweet chestnut cream piped over meringue and whipped cream for a classic Swiss treat.</p>
+                    <div class="menu-tags"><span>Chestnut</span><span>Meringue</span><span>Whipped Cream</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/swiss_chocolate_mousse.webp" alt="Swiss Chocolate Mousse"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Chocolate Dessert</span>
+                    <div class="menu-title"><h3>Swiss Chocolate Mousse</h3><span>CHF 6.90</span></div>
+                    <p>Light, silky mousse made with rich Swiss chocolate and finished with shaved cocoa.</p>
+                    <div class="menu-tags"><span>Swiss Chocolate</span><span>Silky</span><span>Cocoa</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/crèmeschnitte.webp" alt="Crèmeschnitte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Cream Classic</span>
+                    <div class="menu-title"><h3>Crèmeschnitte</h3><span>CHF 6.50</span></div>
+                    <p>Layers of crisp pastry and smooth vanilla cream, finished with a delicate glaze.</p>
+                    <div class="menu-tags"><span>Vanilla Cream</span><span>Layered Pastry</span><span>Glazed</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/poached_pear_dessert.webp" alt="Poached Pear Dessert"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Elegant Dessert</span>
+                    <div class="menu-title"><h3>Poached Pear & Chocolate</h3><span>CHF 7.60</span></div>
+                    <p>Tender pear poached with spice, served with warm Swiss chocolate sauce.</p>
+                    <div class="menu-tags"><span>Pear</span><span>Chocolate Sauce</span><span>Spiced</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/swiss_hot_chocolate.webp" alt="Swiss Hot Chocolate"></div>
+                <div class="menu-content">
+                    <span class="menu-category">House Drink</span>
+                    <div class="menu-title"><h3>Swiss Hot Chocolate</h3><span>CHF 5.80</span></div>
+                    <p>Rich drinking chocolate made with steamed milk and smooth Swiss chocolate.</p>
+                    <div class="menu-tags"><span>Swiss Chocolate</span><span>Steamed Milk</span><span>Rich</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/café_crème.webp" alt="Café Crème"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Coffee Classic</span>
+                    <div class="menu-title"><h3>Café Crème</h3><span>CHF 4.20</span></div>
+                    <p>A smooth Swiss coffee with a soft crema, perfect alongside pastries and cakes.</p>
+                    <div class="menu-tags"><span>Coffee</span><span>Crema</span><span>Swiss Café</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/matcha_latte.webp" alt="Matcha Latte"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Modern Favourite</span>
+                    <div class="menu-title"><h3>Matcha Latte</h3><span>CHF 5.60</span></div>
+                    <p>Earthy matcha blended with steamed milk for a smooth, creamy café drink.</p>
+                    <div class="menu-tags"><span>Matcha</span><span>Steamed Milk</span><span>Creamy</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/espresso.webp" alt="Espresso"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Bold Coffee</span>
+                    <div class="menu-title"><h3>Espresso</h3><span>CHF 3.60</span></div>
+                    <p>A short, bold coffee with deep aroma and a clean finish.</p>
+                    <div class="menu-tags"><span>Strong</span><span>Aromatic</span><span>Classic</span></div>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+                <article class="menu-card">
+                <div class="menu-image"><img src="assets/img/menu/alpine_herbal_tea_in_glass.webp" alt="Alpine Herbal Tea"></div>
+                <div class="menu-content">
+                    <span class="menu-category">Alpine Tea</span>
+                    <div class="menu-title"><h3>Alpine Herbal Tea</h3><span>CHF 4.80</span></div>
+                    <p>A calming herbal infusion inspired by mountain botanicals and soft floral notes.</p>
+                    <div class="menu-tags"><span>Herbal</span><span>Floral</span><span>Calming</span></div>
+                </div>
+                </article>
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  </main>
+
+ <footer id="footer" class="footer position-relative">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">
+                <img src="assets/img/miscellaneous/logo.webp" alt="Maison Du Sucre Logo">
+              </a>
+
+              <div>
+                <h4>Savour Switzerland’s Finest Desserts</h4>
+                <p>
+                  Discover a world of artisanal desserts inspired by Swiss tradition and modern flavour.
+                  From delicate pastries to creamy indulgences, every bite is crafted to perfection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1">
+            <div class="footer-links">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div>
+          <p>© Copyright Maison Du Sucre. All Rights Reserved</p>
+          <div class="credits">
+          <p>
+            <span>Designed & Created By</span>
+            <a href="https://usmanzaman.com" target="_blank" class="usman">Usman Zaman</a>
+          </p>
+          </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Maison Du Sucre",
+    "url": "https://maisondusucre.shop",
+    "image": "https://yourdomain.com/assets/img/miscellaneous/logo.webp",
+    "telephone": "+41 22 555 2910",
+    "email": "maisondusucre@hotmail.com",
+
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Geneva",
+      "addressCountry": "CH"
+    }
+  }
+  </script>
+
+</body>
+
+</html>

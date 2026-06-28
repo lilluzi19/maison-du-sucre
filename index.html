@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", savedTheme || systemTheme);
+  })();
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Maison Du Sucre | Swiss Bakery & Artisan Pastries in Geneva</title>
+  <meta name="description" content="Discover handcrafted Swiss pastries, artisan desserts and custom cakes at Maison Du Sucre. Experience authentic Swiss baking in the heart of Geneva.">
+  <link href="assets/img/miscellaneous/logo.webp" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://maisondusucre.shop/index.html" rel="canonical">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page preloader-active">
+
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+
+      <div class="preloader-mountain">
+        <span></span>
+
+        <svg viewBox="0 0 140 60" aria-hidden="true">
+          <path d="M18 50 L52 16 L86 50" />
+          <path d="M52 50 L88 8 L126 50" />
+        </svg>
+
+        <span></span>
+      </div>
+
+      <svg class="preloader-logo" viewBox="0 0 900 260">
+        <text x="50%" y="45%" text-anchor="middle" class="preloader-text">
+          Maison
+        </text>
+
+        <text x="50%" y="78%" text-anchor="middle" class="preloader-text preloader-text-small">
+          du Sucre
+        </text>
+      </svg>
+
+      <div class="preloader-label">
+        <span></span>
+        <p>SWISS BAKERY</p>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="topbar-contact d-flex align-items-center">
+          <a>
+            <i class="bi bi-envelope"></i>
+            maisondusucre@hotmail.com
+          </a>
+
+          <a>
+            <i class="bi bi-phone"></i>
+            +41 22 555 2910
+          </a>
+        </div>
+
+        <div class="topbar-socials d-flex align-items-center">
+          <a href=""><i class="bi bi-tiktok"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container header-inner">
+
+        <button class="mobile-burger" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="#hero" class="logo" id="logo">
+          <img src="assets/img/miscellaneous/logo.webp" alt="Maison du Sucre Logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#booking">Booking</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-switch" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="switch-bg">
+            <span class="sun"></span>
+            <span class="moon"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="mobile-nav-drawer">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <div class="mobile-nav-title">
+      Navigation
+    </div>
+
+    <div class="mobile-nav-divider"></div>
+
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+
+    <div class="mobile-nav-contact">
+      <span><i class="bi bi-envelope"></i> maisondusucre@hotmail.com</span>
+      <span><i class="bi bi-phone"></i> +41 22 555 2910</span>
+
+      <div class="mobile-nav-socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+
+        <div class="hero-content">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="50">
+              <div class="content">
+                <h1 class="hero-title mb-4">Savour Switzerland’s Finest Desserts</h1>
+                <p class="hero-subtitle mb-4">Discover a world of artisanal desserts inspired by Swiss tradition and modern flavor. 
+                  From delicate pastries to creamy indulgences, every bite is crafted to perfection using the finest local ingredients.
+                </p>
+
+                <div class="hero-actions d-flex flex-wrap gap-3 mb-4">
+                  <div>
+                    <a href="#booking" class="btn btn-primary">Visit Our Cafe</a>
+                  </div>
+                  <div>
+                    <a href="menu.html" class="btn btn-outline">View Menu</a>
+                  </div>
+                  </div>
+
+                <div class="hero-info d-flex flex-wrap align-items-center gap-4">
+                  <div class="info-item d-flex align-items-center">
+                    <i class="bi bi-clock me-2"></i>
+                    <div>
+                      <div class="hero-text">Open Daily</div>
+                      <div class="fw-medium">8:00 AM - 10:00 PM</div>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex align-items-center">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    <div>
+                      <div class="hero-text">Location</div>
+                      <div class="fw-medium">Geneva, Switzerland</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="50">
+              <div class="hero-images">
+                <div class="main-image">
+                  <img src="assets/img/hero/bakery_stall.webp" alt="Bakery Stall" class="img-fluid">
+                </div>
+                <div class="floating-images">
+                  <div class="floating-image floating-image-1">
+                    <img src="assets/img/hero/basler_läckerli.webp" alt="Basler Läckerli" class="img-fluid">
+                  </div>
+                  <div class="floating-image floating-image-2">
+                    <img src="assets/img/hero/engadiner_torte.webp" alt="Engadiner Torte" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="signature-bakes" class="signature-bakes section">
+      <div class="container">
+
+        <div class="section-heading text-center" data-aos="fade-up" data-aos-delay="100">
+          <span class="section-kicker">Customer Favourites</span>
+          <p>Our Most-Loved Swiss Pastries, Desserts & Artisan Treats</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch signature-bakes-desktop">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <article class="bake-card featured-bake">
+              <div class="bake-image">
+                <img src="assets/img/customer_favourites/zuger_kirschtorte.webp" alt="Zuger Kirschtorte">
+              </div>
+
+              <div class="bake-content">
+                <span class="bake-category">Signature Classic</span>
+
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <h3>Zuger Kirschtorte</h3>
+                  <span class="bake-price">CHF 8.90</span>
+                </div>
+
+                <p>A delicate Swiss layer cake with almond meringue, buttercream and a light cherry kirsch finish.</p>
+
+                <div class="bake-meta">
+                  <span>Kirsch Cream</span>
+                  <span>Almond Meringue</span>
+                  <span>Swiss Favourite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-4">
+
+              <div class="col-12" data-aos="fade-left" data-aos-delay="200">
+                <article class="bake-card bake-card-horizontal">
+                  <div class="bake-image">
+                    <img src="assets/img/customer_favourites/bündner_nusstorte.webp" alt="Bündner Nusstorte">
+                  </div>
+
+                  <div class="bake-content">
+                    <span class="bake-category">Alpine Favourite</span>
+
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                      <h3>Bündner Nusstorte</h3>
+                      <span class="bake-price">CHF 6.80</span>
+                    </div>
+
+                    <p>A rich caramel walnut tart from Graubünden, wrapped in buttery shortcrust pastry.</p>
+
+                    <div class="bake-meta">
+                      <span>Caramel Walnut</span>
+                      <span>Buttery Pastry</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                <article class="bake-card bake-card-horizontal">
+                  <div class="bake-image">
+                    <img src="assets/img/customer_favourites/meringue_and_double_cream.webp" alt="Swiss Meringue And Double Cream">
+                  </div>
+
+                  <div class="bake-content">
+                    <span class="bake-category">Mountain Classic</span>
+
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                      <h3>Meringue & Double Cream</h3>
+                      <span class="bake-price">CHF 7.40</span>
+                    </div>
+
+                    <p>Crisp Swiss meringue served with silky double cream and seasonal berries.</p>
+
+                    <div class="bake-meta">
+                      <span>Light & Crisp</span>
+                      <span>Double Cream</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12">
+                <article class="bake-card bake-card-horizontal">
+                  <div class="bake-image">
+                    <img src="assets/img/customer_favourites/swiss_chocolate_truffle_tart.webp" alt="Swiss Chocolate Truffle Tart">
+                  </div>
+
+                  <div class="bake-content">
+                    <span class="bake-category">Chocolate Indulgence</span>
+
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                      <h3>Swiss Chocolate Truffle Tart</h3>
+                      <span class="bake-price">CHF 8.20</span>
+                    </div>
+
+                    <p>Smooth Swiss chocolate ganache in a crisp tart shell, finished with cocoa dusting.</p>
+
+                    <div class="bake-meta">
+                      <span>Dark Chocolate</span>
+                      <span>Ganache</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row g-3 signature-bakes-mobile">
+
+          <div class="col-6">
+            <article class="bake-card">
+              <div class="bake-image">
+                <img src="assets/img/customer_favourites/zuger_kirschtorte.webp" alt="Zuger Kirschtorte">
+              </div>
+
+              <div class="bake-content">
+                <span class="bake-category">Signature Classic</span>
+
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <h3>Zuger Kirschtorte</h3>
+                  <span class="bake-price">CHF 8.90</span>
+                </div>
+
+                <p>A delicate Swiss layer cake with almond meringue, buttercream and a light cherry kirsch finish.</p>
+
+                <div class="bake-meta">
+                  <span>Kirsch Cream</span>
+                  <span>Almond Meringue</span>
+                  <span>Swiss Favourite</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-6">
+            <article class="bake-card">
+              <div class="bake-image">
+                <img src="assets/img/customer_favourites/bündner_nusstorte.webp" alt="Bündner Nusstorte">
+              </div>
+
+              <div class="bake-content">
+                <span class="bake-category">Alpine Favourite</span>
+
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <h3>Bündner Nusstorte</h3>
+                  <span class="bake-price">CHF 6.80</span>
+                </div>
+
+                <p>A rich caramel walnut tart from Graubünden, wrapped in buttery shortcrust pastry.</p>
+
+                <div class="bake-meta">
+                  <span>Caramel Walnut</span>
+                  <span>Buttery Pastry</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-6">
+            <article class="bake-card">
+              <div class="bake-image">
+                <img src="assets/img/customer_favourites/meringue_and_double_cream.webp" alt="Swiss Meringue And Double Cream">
+              </div>
+
+              <div class="bake-content">
+                <span class="bake-category">Mountain Classic</span>
+
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <h3>Meringue & Double Cream</h3>
+                  <span class="bake-price">CHF 7.40</span>
+                </div>
+
+                <p>Crisp Swiss meringue served with silky double cream and seasonal berries.</p>
+
+                <div class="bake-meta">
+                  <span>Light & Crisp</span>
+                  <span>Double Cream</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-6">
+            <article class="bake-card">
+              <div class="bake-image">
+                <img src="assets/img/customer_favourites/swiss_chocolate_truffle_tart.webp" alt="Swiss Chocolate Truffle Tart">
+              </div>
+
+              <div class="bake-content">
+                <span class="bake-category">Chocolate Indulgence</span>
+
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <h3>Swiss Chocolate Truffle Tart</h3>
+                  <span class="bake-price">CHF 8.20</span>
+                </div>
+
+                <p>Smooth Swiss chocolate ganache in a crisp tart shell, finished with cocoa dusting.</p>
+
+                <div class="bake-meta">
+                  <span>Dark Chocolate</span>
+                  <span>Ganache</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="menu.html" class="btn-menu">View Full Menu</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section light-background">
+
+      <div class="section-heading text-center" data-aos="fade-up" data-aos-delay="200">
+        <span class="section-kicker">Customer Reviews</span>
+        <p>See What Our Amazing Customers Are Saying</p>
+      </div>
+
+      <div class="container">
+        <div class="testimonial-grid">
+
+          <div class="testimonial-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-image">
+                  <img src="assets/img/testimonials/elodie.webp" class="img-fluid" alt="Testimonial 1" loading="lazy">
+                </div>
+                <div class="testimonial-meta">
+                  <h3>Élodie Laurent</h3>
+                  <h4>Event Planner</h4>
+                  <div class="company-logo">
+                    <i class="bi bi-balloon-heart-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <i class="bi bi-chat-quote-fill quote-icon"></i>
+                <p>
+                  Maison Du Sucre catered my client’s wedding, and every dessert was perfection.
+                  The Magenbrot display alone became the evening’s centerpiece. It was delicate, fragrant and unforgettable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-left" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-image">
+                  <img src="assets/img/testimonials/matteo.webp" class="img-fluid" alt="Testimonial 2" loading="lazy">
+                </div>
+                <div class="testimonial-meta">
+                  <h3>Matteo Rossi</h3>
+                  <h4>Travel Blogger</h4>
+                  <div class="company-logo">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <i class="bi bi-chat-quote-fill quote-icon"></i>
+                <p>
+                  I’ve toured patisseries all over Europe, and Maison Du Sucre feels like a love letter to Swiss indulgence.
+                  The meringue melts before you even finish the first bite.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-right" data-aos-delay="400">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-image">
+                  <img src="assets/img/testimonials/clara.webp" class="img-fluid" alt="Testimonial 3" loading="lazy">
+                </div>
+                <div class="testimonial-meta">
+                  <h3>Clara Vogel</h3>
+                  <h4>Pastry Chef</h4>
+                  <div class="company-logo">
+                    <i class="bi bi-fork-knife"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <i class="bi bi-chat-quote-fill quote-icon"></i>
+                <p>
+                  As a fellow pastry chef, I’m in awe of their precision.
+                  Their mousse has the smoothest chocolate I’ve ever seen, you can practically see your reflection in it.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-image">
+                  <img src="assets/img/testimonials/louis.webp" class="img-fluid" alt="Testimonial 4" loading="lazy">
+                </div>
+                <div class="testimonial-meta">
+                  <h3>Louis Steiner</h3>
+                  <h4>Local Resident</h4>
+                  <div class="company-logo">
+                    <i class="bi bi-house-heart-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-body">
+                <i class="bi bi-chat-quote-fill quote-icon"></i>
+                <p>
+                  I stop by every Sunday for their warm Apfelstrudel and espresso.
+                  It’s become a tradition, the staff already knows my order. True Swiss hospitality. 
+                  I cannot wait to see their new menu items!
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="booking" class="booking section">
+
+      <div class="section-heading text-center" data-aos="fade-up" data-aos-delay="200">
+        <span class="section-kicker">Customer Booking</span>
+        <p>Reserve your table or send us a special dessert enquiry</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row align-items-center g-5 mb-5">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="booking-intro">
+              <h2>Reserve A Sweet Moment In Geneva</h2>
+              <p>
+                Join us for handcrafted Swiss desserts, artisan pastries and freshly brewed coffee in a warm café setting.
+                Whether it’s a quiet breakfast, afternoon treat or special celebration, Maison du Sucre is made for memorable moments.
+              </p>
+
+              <div class="booking-stats">
+                <div class="booking-stat">
+                  <span>Fresh Daily</span>
+                  <small>Pastries & desserts</small>
+                </div>
+
+                <div class="booking-stat">
+                  <span>8–10PM</span>
+                  <small>Open every day</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="booking-image">
+              <img src="assets/img/booking/booking_image.webp" alt="Maison du Sucre Bakery Interior" class="img-fluid" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row g-5 align-items-start">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="400">
+            <div class="booking-details">
+              <h3>Contact & Opening Hours</h3>
+              <p>Use the form or contact us directly for reservations, cake enquiries and private dessert bookings.</p>
+
+              <div class="booking-contact-list">
+
+                <div class="booking-contact-item">
+                  <div class="booking-contact-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="booking-contact-text">
+                    <span>Call Us</span>
+                    <strong>+41 22 555 2910</strong>
+                  </div>
+                </div>
+
+                <div class="booking-contact-item">
+                  <div class="booking-contact-icon">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="booking-contact-text">
+                    <span>Email</span>
+                    <strong>hello@maisondusucre.ch</strong>
+                  </div>
+                </div>
+
+                <div class="booking-contact-item">
+                  <div class="booking-contact-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="booking-contact-text">
+                    <span>Opening Hours</span>
+                    <strong>Mon–Sun: 8:00 AM – 10:00 PM</strong>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="booking-message" id="bookingMessage"></div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="booking-form-card" data-aos="fade-left" data-aos-delay="400">
+              <h4>Quick Booking Enquiry</h4>
+
+              <form class="booking-form" novalidate>
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="booking-date">
+                      <button type="button" class="booking-date-toggle">
+                        <span>Select Date</span>
+                        <i class="bi bi-calendar3"></i>
+                      </button>
+
+                      <div class="booking-calendar">
+                        <div class="booking-calendar-header">
+                          <button type="button" class="booking-calendar-prev">
+                            <i class="bi bi-chevron-left"></i>
+                          </button>
+
+                          <strong class="booking-calendar-title"></strong>
+
+                          <button type="button" class="booking-calendar-next">
+                            <i class="bi bi-chevron-right"></i>
+                          </button>
+                        </div>
+
+                        <div class="booking-calendar-days">
+                          <span>Mo</span>
+                          <span>Tu</span>
+                          <span>We</span>
+                          <span>Th</span>
+                          <span>Fr</span>
+                          <span>Sa</span>
+                          <span>Su</span>
+                        </div>
+
+                        <div class="booking-calendar-grid"></div>
+                      </div>
+
+                      <input type="hidden" name="date">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="booking-select">
+
+                      <button type="button" class="booking-select-toggle">
+                        <span>Guest Count</span>
+                        <i class="bi bi-chevron-down"></i>
+                      </button>
+
+                      <ul class="booking-select-menu">
+                        <li data-value="1-2">1–2 Guests</li>
+                        <li data-value="3-5">3–5 Guests</li>
+                        <li data-value="6-10">6–10 Guests</li>
+                        <li data-value="10+">10+ Guests</li>
+                      </ul>
+
+                      <input type="hidden" name="guest_count">
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="booking-select">
+
+                      <button type="button" class="booking-select-toggle">
+                        <span>Booking Type</span>
+                        <i class="bi bi-chevron-down"></i>
+                      </button>
+
+                      <ul class="booking-select-menu">
+                        <li data-value="table">Table Reservation</li>
+                        <li data-value="cake">Custom Cake Enquiry</li>
+                        <li data-value="private">Private Dessert Booking</li>
+                        <li data-value="other">Other</li>
+                      </ul>
+
+                      <input type="hidden" name="booking_type">
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="5" class="form-control" placeholder="Any extra details?" required></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="booking-submit">Send Enquiry</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="faq" class="faq-section section">
+
+      <div class="container">
+
+        <div class="section-heading text-center" data-aos="fade-up" data-aos-delay="200">
+          <span class="section-kicker">Frequently Asked Questions</span>
+          <p>Everything you may want to know before visiting Maison du Sucre.</p>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item active" data-aos="fade-up" data-aos-delay="300">
+            <button class="faq-question" type="button">
+              <span>Do you bake everything fresh daily?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Yes. Our pastries, breads and desserts are prepared fresh every morning in small artisan batches.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+            <button class="faq-question" type="button">
+              <span>Can I reserve a table in advance?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Absolutely. You can request a booking through our booking page and our team will confirm availability.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <button class="faq-question" type="button">
+              <span>Do you offer custom cakes for events?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Yes. We create selected custom cakes for birthdays, weddings and private occasions with advance notice.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
+            <button class="faq-question" type="button">
+              <span>Are vegetarian options available?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Many of our pastries, desserts and beverages are vegetarian-friendly and clearly marked on the menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <button class="faq-question" type="button">
+              <span>Where is Maison du Sucre located?</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                We are located in Geneva, Switzerland. Full directions and opening hours can be found on our contact page.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+          <a href="faq.html" class="btn-menu">View All FAQs</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <div class="footer-brand">
+              <a href="#hero" class="footer-logo">
+                <img src="assets/img/miscellaneous/logo.webp" alt="Maison Du Sucre Logo">
+              </a>
+
+              <div>
+                <h4>Savour Switzerland’s Finest Desserts</h4>
+                <p>
+                  Discover a world of artisanal desserts inspired by Swiss tradition and modern flavour.
+                  From delicate pastries to creamy indulgences, every bite is crafted to perfection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1">
+            <div class="footer-links">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div>
+          <p>© Copyright Maison Du Sucre. All Rights Reserved</p>
+          <div class="credits">
+          <p>
+            <span>Designed & Created By</span>
+            <a href="https://usmanzaman.com" target="_blank" class="usman">Usman Zaman</a>
+          </p>
+          </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Maison Du Sucre",
+    "url": "https://maisondusucre.shop",
+    "image": "https://yourdomain.com/assets/img/miscellaneous/logo.webp",
+    "telephone": "+41 22 555 2910",
+    "email": "maisondusucre@hotmail.com",
+
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Geneva",
+      "addressCountry": "CH"
+    }
+  }
+  </script>
+
+</body>
+
+</html>

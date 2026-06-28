@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", savedTheme || systemTheme);
+  })();
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Frequently Asked Questions | Maison Du Sucre</title>
+  <meta name="description" content="Find answers to common questions about our bakery, reservations, custom cakes, ingredients and services at Maison Du Sucre.">
+  <link href="assets/img/miscellaneous/logo.webp" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://maisondusucre.shop/faq.html" rel="canonical">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="privacy-page preloader-active">
+
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+
+      <div class="preloader-mountain">
+        <span></span>
+
+        <svg viewBox="0 0 140 60" aria-hidden="true">
+          <path d="M18 50 L52 16 L86 50" />
+          <path d="M52 50 L88 8 L126 50" />
+        </svg>
+
+        <span></span>
+      </div>
+
+      <svg class="preloader-logo" viewBox="0 0 900 260">
+        <text x="50%" y="45%" text-anchor="middle" class="preloader-text">
+          Maison
+        </text>
+
+        <text x="50%" y="78%" text-anchor="middle" class="preloader-text preloader-text-small">
+          du Sucre
+        </text>
+      </svg>
+
+      <div class="preloader-label">
+        <span></span>
+        <p>SWISS BAKERY</p>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="topbar-contact d-flex align-items-center">
+          <a>
+            <i class="bi bi-envelope"></i>
+            maisondusucre@hotmail.com
+          </a>
+
+          <a>
+            <i class="bi bi-phone"></i>
+            +41 22 555 2910
+          </a>
+        </div>
+
+        <div class="topbar-socials d-flex align-items-center">
+          <a href=""><i class="bi bi-tiktok"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container header-inner">
+
+        <button class="mobile-burger" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="index.html" class="logo" id="logo">
+          <img src="assets/img/miscellaneous/logo.webp" alt="Maison du Sucre Logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#booking">Booking</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-switch" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="switch-bg">
+            <span class="sun"></span>
+            <span class="moon"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="mobile-nav-drawer">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <div class="mobile-nav-title">
+      Navigation
+    </div>
+
+    <div class="mobile-nav-divider"></div>
+
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#booking">Booking</a></li>
+    </ul>
+
+    <div class="mobile-nav-contact">
+      <span><i class="bi bi-envelope"></i> maisondusucre@hotmail.com</span>
+      <span><i class="bi bi-phone"></i> +41 22 555 2910</span>
+
+      <div class="mobile-nav-socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section id="faq" class="privacy section">
+
+      <div class="container">
+
+        <div class="section-heading text-center">
+          <span class="section-kicker">FAQs</span>
+
+          <p>
+            Helpful Answers About Our Bakery, Bookings, Desserts & Visits
+          </p>
+
+          <div class="last-updated">
+            Last Updated: May 25, 2026
+          </div>
+        </div>
+
+        <div class="privacy-content">
+
+          <div class="content-section">
+            <h2>1. Do you bake everything fresh daily?</h2>
+            <p>
+              Yes. Our pastries, breads and desserts are prepared fresh every morning in small artisan batches.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>2. Can I reserve a table in advance?</h2>
+            <p>
+              Absolutely. You can request a booking through our booking page and our team will confirm availability as soon as possible.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>3. Do you offer custom cakes for events?</h2>
+            <p>
+              Yes. We create selected custom cakes for birthdays, weddings and private occasions with advance notice.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>4. Are vegetarian options available?</h2>
+            <p>
+              Many of our pastries, desserts and beverages are vegetarian-friendly and clearly marked on the menu.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>5. Where is Maison du Sucre located?</h2>
+            <p>
+              We are located in Geneva, Switzerland. Full directions and opening hours can be found on our contact page.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>6. Do you serve drinks as well as desserts?</h2>
+            <p>
+              Yes. We serve coffee, tea, hot chocolate and selected seasonal drinks alongside our Swiss pastries and desserts.
+            </p>
+          </div>
+
+          <div class="content-section">
+            <h2>7. Do you have gluten-free options?</h2>
+            <p>
+              We may offer selected gluten-free items depending on the day. Please ask our team before ordering, especially if you have an allergy or intolerance.
+            </p>
+          </div>
+
+          <div class="content-section" data-aos="fade-up" data-aos-delay="200">
+            <h2>8. Can I order desserts for collection?</h2>
+            <p>
+              Yes. Selected cakes, pastries and dessert boxes can be requested for collection. Availability depends on the item and notice period.
+            </p>
+          </div>
+
+          <div class="content-section" data-aos="fade-up" data-aos-delay="250">
+            <h2>9. Do you accept walk-ins?</h2>
+            <p>
+              Yes. Walk-ins are welcome, but bookings are recommended during weekends, holidays and busy afternoon periods.
+            </p>
+          </div>
+
+          <div class="content-section" data-aos="fade-up" data-aos-delay="300">
+            <h2>10. Do you cater for private events?</h2>
+            <p>
+              We can provide dessert selections for small private gatherings, birthdays and special occasions. Larger requests should be made in advance.
+            </p>
+          </div>
+
+          <div class="content-section" data-aos="fade-up" data-aos-delay="350">
+            <h2>11. Are allergens listed on the menu?</h2>
+            <p>
+              We aim to provide clear allergen information where possible. Please speak to our team before ordering if you have allergies, as our kitchen handles nuts, dairy, gluten and eggs.
+            </p>
+          </div>
+
+          <div class="content-section" data-aos="fade-up" data-aos-delay="400">
+            <h2>12. What are your opening hours?</h2>
+            <p>
+              Maison du Sucre is open daily from 8:00 AM to 10:00 PM. Seasonal or holiday hours may vary.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">
+                <img src="assets/img/miscellaneous/logo.webp" alt="Maison Du Sucre Logo">
+              </a>
+
+              <div>
+                <h4>Savour Switzerland’s Finest Desserts</h4>
+                <p>
+                  Discover a world of artisanal desserts inspired by Swiss tradition and modern flavour.
+                  From delicate pastries to creamy indulgences, every bite is crafted to perfection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1">
+            <div class="footer-links">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div>
+          <p>© Copyright Maison Du Sucre. All Rights Reserved</p>
+          <div class="credits">
+          <p>
+            <span>Designed & Created By</span>
+            <a href="https://usmanzaman.com" target="_blank" class="usman">Usman Zaman</a>
+          </p>
+          </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Maison Du Sucre",
+    "url": "https://maisondusucre.shop",
+    "image": "https://yourdomain.com/assets/img/miscellaneous/logo.webp",
+    "telephone": "+41 22 555 2910",
+    "email": "maisondusucre@hotmail.com",
+
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Geneva",
+      "addressCountry": "CH"
+    }
+  }
+  </script>
+
+</body>
+
+</html>

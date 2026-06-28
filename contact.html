@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", savedTheme || systemTheme);
+  })();
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact Us | Reservations & Enquiries | Maison Du Sucre</title>
+  <meta name="description" content="Get in touch with Maison Du Sucre for reservations, custom cake enquiries and general questions. We look forward to hearing from you.">
+  <link href="assets/img/miscellaneous/logo.webp" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://maisondusucre.shop/contact.html" rel="canonical">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="contact-page preloader-active">
+
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+
+      <div class="preloader-mountain">
+        <span></span>
+
+        <svg viewBox="0 0 140 60" aria-hidden="true">
+          <path d="M18 50 L52 16 L86 50" />
+          <path d="M52 50 L88 8 L126 50" />
+        </svg>
+
+        <span></span>
+      </div>
+
+      <svg class="preloader-logo" viewBox="0 0 900 260">
+        <text x="50%" y="45%" text-anchor="middle" class="preloader-text">
+          Maison
+        </text>
+
+        <text x="50%" y="78%" text-anchor="middle" class="preloader-text preloader-text-small">
+          du Sucre
+        </text>
+      </svg>
+
+      <div class="preloader-label">
+        <span></span>
+        <p>SWISS BAKERY</p>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="topbar-contact d-flex align-items-center">
+          <a>
+            <i class="bi bi-envelope"></i>
+            maisondusucre@hotmail.com
+          </a>
+
+          <a>
+            <i class="bi bi-phone"></i>
+            +41 22 555 2910
+          </a>
+        </div>
+
+        <div class="topbar-socials d-flex align-items-center">
+          <a href=""><i class="bi bi-tiktok"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container header-inner">
+
+        <button class="mobile-burger" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="index.html" class="logo" id="logo">
+          <img src="assets/img/miscellaneous/logo.webp" alt="Maison du Sucre Logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#booking">Booking</a></li>
+          </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-switch" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <span class="switch-bg">
+            <span class="sun"></span>
+            <span class="moon"></span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="mobile-nav-drawer">
+    <button class="mobile-nav-close" type="button" aria-label="Close menu">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <div class="mobile-nav-title">
+      Navigation
+    </div>
+
+    <div class="mobile-nav-divider"></div>
+
+    <ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#booking">Booking</a></li>
+    </ul>
+
+    <div class="mobile-nav-contact">
+      <span><i class="bi bi-envelope"></i> maisondusucre@hotmail.com</span>
+      <span><i class="bi bi-phone"></i> +41 22 555 2910</span>
+
+      <div class="mobile-nav-socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section id="contact" class="contact section">
+
+      <div class="section-heading text-center">
+        <span class="section-kicker">Contact Us</span>
+        <p>Please Fill In Our Form & We'll Get Back To You Straight Away</p>
+      </div>
+
+      <div class="container">
+
+        <div class="mb-5">
+          <iframe
+            style="width: 100%; height: 400px; border: none; border-radius: 10px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.123051763094!2d6.142005576758703!3d46.20243208522115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6531824ae619%3A0x9242d5a8ed8e165c!2s1204%20Geneva%2C%20Switzerland!5e0!3m2!1sen!2suk!4v1730156500000!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>We’d love to hear from you. Reach out with any questions about reservations, events, or our seasonal desserts. We’ll get back to you shortly.</p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Our Location</h4>
+                  <p>Rue de la Confiserie 12</p>
+                  <p>1204 Geneva, Switzerland</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+41 22 555 2910</p>
+                  <p>+41 22 555 2911</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>maisondusucre@hotmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-message" id="contactMessage"></div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Have a question or a special request? Fill out the form below and our team will reach out within 24 hours.</p>
+
+              <form class="contact-message-form" novalidate>
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-submit">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">
+                <img src="assets/img/miscellaneous/logo.webp" alt="Maison Du Sucre Logo">
+              </a>
+
+              <div>
+                <h4>Savour Switzerland’s Finest Desserts</h4>
+                <p>
+                  Discover a world of artisanal desserts inspired by Swiss tradition and modern flavour.
+                  From delicate pastries to creamy indulgences, every bite is crafted to perfection.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 offset-lg-1">
+            <div class="footer-links">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div>
+          <p>© Copyright Maison Du Sucre. All Rights Reserved</p>
+          <div class="credits">
+          <p>
+            <span>Designed & Created By</span>
+            <a href="https://usmanzaman.com" target="_blank">Usman Zaman</a>
+          </p>
+          </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Maison Du Sucre",
+    "url": "https://maisondusucre.shop",
+    "image": "https://yourdomain.com/assets/img/miscellaneous/logo.webp",
+    "telephone": "+41 22 555 2910",
+    "email": "maisondusucre@hotmail.com",
+
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Geneva",
+      "addressCountry": "CH"
+    }
+  }
+  </script>
+
+</body>
+
+</html>
