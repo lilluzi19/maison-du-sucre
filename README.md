@@ -1,10 +1,8 @@
-Maison Du Sucre
+<h2>Maison Du Sucre</h2>
 
 Description:
 
 A modern bakery website built to highlight products, strengthen brand presence and provide customers with an engaging experience across desktop and mobile devices.
-
-<h1 style="color: aqua;">HEADER</h1>
 
 Tech Stack:
 
