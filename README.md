@@ -4,7 +4,7 @@ Description:
 
 A modern bakery website built to highlight products, strengthen brand presence and provide customers with an engaging experience across desktop and mobile devices.
 
-<h1 style="color: aqua;"></h1>
+<h1 style="color: aqua;">HEADER</h1>
 
 Tech Stack:
 
