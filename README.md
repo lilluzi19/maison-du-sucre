@@ -23,7 +23,10 @@ Light and dark mode with saved user preferences.
 Smooth scrolling navigation and animated page interactions.
 Mobile-friendly navigation with a responsive menu drawer.
 
+Screenshot:
+
+<img width="2546" height="1315" alt="Screenshot 2026-06-28 224217" src="https://github.com/user-attachments/assets/42cd0f13-584e-43c5-9abf-cb2dffedad23" />
+
 Live Demo:
 
 https://maisondusucre.shop/
-<img width="372" height="372" alt="logo" src="https://github.com/user-attachments/assets/2c0cc6f2-19d0-4e7b-8d0d-54dd1572249f" />
