@@ -7,24 +7,24 @@
 <h2>Tech Stack</h2>
 
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>Bootstrap</li>
-  <li>Figma</li>
-  <li>Visual Studio Code</li>
+  <li>HTML.</li>
+  <li>CSS.</li>
+  <li>JavaScript.</li>
+  <li>Bootstrap.</li>
+  <li>Figma.</li>
+  <li>Visual Studio Code.</li>
 </ul>
 
 <h2>Features</h2>
 
 <ul>
-  <li>Fully responsive design across desktop, tablet, and mobile devices</li>
-  <li>Interactive product filtering by category</li>
-  <li>Custom booking system with interactive date picker and dropdown menus</li>
-  <li>Client-side form validation with real-time user feedback</li>
-  <li>Light and dark mode with saved user preferences</li>
-  <li>Smooth scrolling navigation and animated page interactions</li>
-  <li>Mobile-friendly navigation with a responsive menu drawer</li>
+  <li>Fully responsive design across desktop, tablet, and mobile devices.</li>
+  <li>Interactive product filtering by category.</li>
+  <li>Custom booking system with interactive date picker and dropdown menus.</li>
+  <li>Client-side form validation with real-time user feedback.</li>
+  <li>Light and dark mode with saved user preferences.</li>
+  <li>Smooth scrolling navigation and animated page interactions.</li>
+  <li>Mobile-friendly navigation with a responsive menu drawer.</li>
 </ul>
 
 <h2>Screenshots</h2>
