@@ -26,3 +26,4 @@ Mobile-friendly navigation with a responsive menu drawer.
 Live Demo:
 
 https://maisondusucre.shop/
+<img width="372" height="372" alt="logo" src="https://github.com/user-attachments/assets/2c0cc6f2-19d0-4e7b-8d0d-54dd1572249f" />
